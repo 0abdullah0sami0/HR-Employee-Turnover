@@ -1,0 +1,12 @@
+library(shiny)
+library(vembedr)
+library(readxl)
+library(tidyverse)
+library(plotly)
+library(RColorBrewer)
+library(shinydashboard)
+library(shinythemes)
+library(shinyWidgets)
+library(shinycssloaders)
+
+df <- read.csv("https://query.data.world/s/gagleowsdtnu2omzwfdscvy7udb4h7?dws=00000", header=TRUE, stringsAsFactors=FALSE)
