@@ -7,13 +7,14 @@ dashboardPage(
     setBackgroundColor(color = "#FFFFFF", shinydashboard = FALSE),
     setBackgroundColor(color = "#FFFFFF", shinydashboard = TRUE),
     tags$head(
-      tags$link(rel = "shortcut icon", href = "Good-logo.ico")
+      tags$link(rel = "shortcut icon", href = "Good logo.png")
     ),
-    navbarPage(title=div(img(src="Saudi-Ministry-of-Health-Logo.ico", style = "width:8%;height:10%; position:relative; display:right-align; margin-top:-10px; margin-right:300px;")),
+    navbarPage(title=div(img(src="Good logo.png", style = "width:8%;height:10%; position:relative; display:right-align; margin-top:-10px; margin-right:300px;")),
                theme = shinytheme("lumen"),
-               windowTitle = "WASL",
+               windowTitle = "Employee Turnover Analysis",
                position = "fixed-top",
-               tabPanel(),
+               tabPanel("Employer ratings",
+                        ),
                tabPanel()
     ),
     
